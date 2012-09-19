@@ -1,5 +1,7 @@
 ;;auto-complete mode
 (live-add-pack-lib "auto-complete")
+(live-add-pack-lib "auto-complete/lib/popup")
+(live-add-pack-lib "auto-complete/lib/fuzzy")
 (require 'auto-complete)
 (require 'auto-complete-config)
 (ac-config-default)

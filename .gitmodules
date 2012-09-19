@@ -12,7 +12,7 @@
         ignore = untracked
 [submodule "packs/dev/clojure-pack/vendor/submodules/auto-complete"]
         path = packs/dev/clojure-pack/vendor/submodules/auto-complete
-        url = git://github.com/m2ym/auto-complete.git
+        url = git://github.com/auto-complete/auto-complete.git
         ignore = untracked
 [submodule "packs/dev/power-pack/vendor/submodules/volatile-highlights"]
         path = packs/dev/power-pack/vendor/submodules/volatile-highlights
@@ -86,5 +86,5 @@
         path = packs/dev/clojure-pack/vendor/submodules/nrepl
         url = git://github.com/kingtim/nrepl.el.git
 [submodule "packs/dev/haskell-pack/lib/haskell-mode"]
-	path = packs/dev/haskell-pack/lib/haskell-mode
-	url = git://github.com/haskell/haskell-mode.git
+        path = packs/dev/haskell-pack/lib/haskell-mode
+        url = git://github.com/haskell/haskell-mode.git
