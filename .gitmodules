@@ -1,6 +1,3 @@
-[submodule "packs/live/haskell-pack/lib/haskell-mode"]
-        path = packs/live/haskell-pack/lib/haskell-mode
-        url = https://github.com/haskell/haskell-mode.git
 [submodule "packs/dev/foundation-pack/vendor/submodules/ibuffer-git"]
         path = packs/dev/foundation-pack/vendor/submodules/ibuffer-git
         url = git://github.com/jrockway/ibuffer-git.git
@@ -88,3 +85,6 @@
 [submodule "packs/dev/clojure-pack/vendor/submodules/nrepl"]
         path = packs/dev/clojure-pack/vendor/submodules/nrepl
         url = git://github.com/kingtim/nrepl.el.git
+[submodule "packs/dev/haskell-pack/lib/haskell-mode"]
+	path = packs/dev/haskell-pack/lib/haskell-mode
+	url = git://github.com/haskell/haskell-mode.git
