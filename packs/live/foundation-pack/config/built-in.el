@@ -63,9 +63,9 @@
 ;; make emacs use the clipboard
 (setq x-select-enable-clipboard t)
 
-;;remove all trailing whitespace and trailing blank lines before
-;;saving the file
-(add-hook 'before-save-hook 'whitespace-cleanup)
+;;show trailing whitespace always
+(setq-default show-trailing-whitespace t)
+
 
 ;; savehist keeps track of some history
 (setq savehist-additional-variables
