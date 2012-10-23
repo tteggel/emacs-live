@@ -84,7 +84,11 @@
         url = git://github.com/samaaron/nrepl-eval-sexp-fu.git
 [submodule "packs/dev/clojure-pack/vendor/submodules/nrepl"]
         path = packs/dev/clojure-pack/vendor/submodules/nrepl
-        url = git://github.com/kingtim/nrepl.el.git
+        url = git://github.com/samaaron/nrepl.el.git
 [submodule "packs/dev/haskell-pack/lib/haskell-mode"]
         path = packs/dev/haskell-pack/lib/haskell-mode
         url = git://github.com/haskell/haskell-mode.git
+[submodule "packs/dev/lang-pack/vendor/submodules/js2"]
+	path = packs/dev/lang-pack/vendor/submodules/js2
+	url = git://github.com/mooz/js2-mode.git
+
