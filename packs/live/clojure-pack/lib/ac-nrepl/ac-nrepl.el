@@ -1,11 +1,12 @@
-;;; ac-nrepl.el --- An auto-complete source for Clojure using nrepl completions
+;;; ac-nrepl.el --- auto-complete sources for Clojure using nrepl completions
 
 ;; Copyright (C) 2012  Steve Purcell <steve@sanityinc.com>
 
 ;; Author: Steve Purcell <steve@sanityinc.com>
+;;         Sam Aaron <samaaron@gmail.com>
 ;; URL: https://github.com/purcell/ac-nrepl
 ;; Keywords: languages, clojure, nrepl
-;; Version: 0.1
+;; Version: DEV
 ;; Package-Requires: ((nrepl "0.1") (auto-complete "1.4"))
 
 ;; This program is free software; you can redistribute it and/or
@@ -23,7 +24,8 @@
 
 ;;; Commentary:
 
-;; Based ac-slime
+;; Provides a number of auto-complete sources for Clojure projects
+;; using nrepl.
 
 ;;; Installation:
 
@@ -62,7 +64,7 @@
 
 (defun ac-nrepl-candidates* (clj)
   "Return completion candidates produced by evaluating CLJ."
-  (let ((response (plist-get (nrepl-send-string-sync clj (nrepl-current-ns)) :value)))
+  (let ((response (plist-get (nrepl-send-string-sync (concat "(require 'complete.core) " clj) (nrepl-current-ns)) :value)))
     (when response
       (car (read-from-string response)))))
 
@@ -150,7 +152,8 @@
          '()
           (let [scope (symbol (first (.split prefix \"/\")))]
             (map (fn [memb] (str scope \"/\" memb))
-                 (when-let [class (complete.core/resolve-class scope)]
+                 (when-let [class (try (complete.core/resolve-class scope)
+                                   (catch java.lang.ClassNotFoundException e nil))]
                    (complete.core/static-members class))))))  ")))
 
 (defun ac-nrepl-documentation (symbol)

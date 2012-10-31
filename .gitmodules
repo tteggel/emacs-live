@@ -12,7 +12,7 @@
         ignore = untracked
 [submodule "packs/dev/clojure-pack/vendor/submodules/auto-complete"]
         path = packs/dev/clojure-pack/vendor/submodules/auto-complete
-        url = git://github.com/auto-complete/auto-complete.git
+        url = git://github.com/samaaron/auto-complete.git
         ignore = untracked
 [submodule "packs/dev/power-pack/vendor/submodules/volatile-highlights"]
         path = packs/dev/power-pack/vendor/submodules/volatile-highlights
@@ -89,6 +89,17 @@
         path = packs/dev/haskell-pack/lib/haskell-mode
         url = git://github.com/haskell/haskell-mode.git
 [submodule "packs/dev/lang-pack/vendor/submodules/js2"]
-	path = packs/dev/lang-pack/vendor/submodules/js2
-	url = git://github.com/mooz/js2-mode.git
-
+        path = packs/dev/lang-pack/vendor/submodules/js2
+        url = git://github.com/mooz/js2-mode.git
+[submodule "packs/dev/clojure-pack/vendor/submodules/popup-el"]
+        path = packs/dev/clojure-pack/vendor/submodules/popup-el
+        url = git://github.com/auto-complete/popup-el.git
+[submodule "packs/dev/clojure-pack/vendor/submodules/fuzzy-el"]
+        path = packs/dev/clojure-pack/vendor/submodules/fuzzy-el
+        url = git://github.com/auto-complete/fuzzy-el.git
+[submodule "packs/dev/power-pack/vendor/submodules/browse-kill-ring"]
+        path = packs/dev/power-pack/vendor/submodules/browse-kill-ring
+        url = git://github.com/samaaron/browse-kill-ring.git
+[submodule "packs/dev/power-pack/vendor/submodules/expand-region"]
+	path = packs/dev/power-pack/vendor/submodules/expand-region
+	url = git://github.com/magnars/expand-region.el.git

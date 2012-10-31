@@ -125,7 +125,8 @@
                          (concat live-dir "clojure-pack")
                          (concat live-dir "lang-pack")
                          (concat live-dir "power-pack")
-                         (concat live-dir "haskell-pack"))))
+                         (concat live-dir "haskell-pack")
+                         (concat live-dir "git-pack"))))
 
 ;; Helper fn for loading live packs
 
@@ -190,7 +191,6 @@
 ;; "                                                      (live-welcome-message) "
 
 ")))
-
 (require 'package)
 (add-to-list 'package-archives
     '("marmalade" .
