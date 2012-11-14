@@ -1,0 +1,6 @@
+(require 'win-switch)
+(setq win-switch-feedback-background-color "DeepPink3")
+(setq win-switch-feedback-foreground-color "black")
+(setq win-switch-window-threshold 1)
+(setq win-switch-idle-time 0.7)
+(win-switch-set-wrap-around 1)
