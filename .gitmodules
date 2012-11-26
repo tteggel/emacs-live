@@ -118,3 +118,6 @@
 [submodule "packs/dev/power-pack/vendor/submodules/multiple-cursors"]
 	path = packs/dev/power-pack/vendor/submodules/multiple-cursors
 	url = git://github.com/magnars/multiple-cursors.el.git
+[submodule "packs/dev/english-pack/vendor/submodules/artbollocks-mode"]
+	path = packs/dev/english-pack/vendor/submodules/artbollocks-mode
+	url = git://github.com/sachac/artbollocks-mode.git
