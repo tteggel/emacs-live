@@ -39,7 +39,8 @@
       require-final-newline t
       truncate-partial-width-windows nil
       delete-by-moving-to-trash nil
-      confirm-nonexistent-file-or-buffer nil)
+      confirm-nonexistent-file-or-buffer nil
+      query-replace-highlight t)
 
 ;;set all coding systems to utf-8
 (setq utf-translate-cjk-mode nil) ; disable CJK coding/encoding (Chinese/Japanese/Korean characters)
@@ -64,9 +65,9 @@
 ;; make emacs use the clipboard
 (setq x-select-enable-clipboard t)
 
-;;show trailing whitespace always
-(setq-default show-trailing-whitespace t)
-
+;;remove all trailing whitespace and trailing blank lines before
+;;saving the file
+(add-hook 'before-save-hook 'whitespace-cleanup)
 
 ;; savehist keeps track of some history
 (setq savehist-additional-variables

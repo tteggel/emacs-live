@@ -51,8 +51,6 @@
       (should (popup-live-p ac-menu))
       (should (equal (popup-list ac-menu) '("FooBar")))
       )))
-<<<<<<< HEAD
-=======
 
 (ert-deftest ac-test-complete-common-part-when-buffer-undo-list-is-t ()
   (ac-test-with-common-setup
@@ -66,4 +64,3 @@
      (ac-stop)
      (should (string= (buffer-string) "Foo"))
      )))
->>>>>>> overtone/master
