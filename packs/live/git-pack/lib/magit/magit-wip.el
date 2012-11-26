@@ -113,13 +113,8 @@ git repository then it is also committed to a special work-in-progress
 ref."
   :lighter magit-wip-save-mode-lighter
   (if magit-wip-save-mode
-<<<<<<< HEAD
       (add-hook  'after-save-hook 'magit-wip-save-safe t t)
     (remove-hook 'after-save-hook 'magit-wip-save-safe t)))
-=======
-      (add-hook  'after-save-hook 'magit-wip-save t t)
-    (remove-hook 'after-save-hook 'magit-wip-save t)))
->>>>>>> overtone/master
 
 ;;;###autoload
 (define-globalized-minor-mode global-magit-wip-save-mode
@@ -134,7 +129,6 @@ ref."
         (magit-wip-save-mode 1)
       (message "Git command 'git wip' cannot be found"))))
 
-<<<<<<< HEAD
 (defun magit-wip-save-safe ()
   (condition-case err
       (magit-wip-save)
@@ -144,11 +138,6 @@ ref."
 (defun magit-wip-save ()
   (let* ((top-dir (magit-get-top-dir default-directory))
          (name (file-truename (buffer-file-name)))
-=======
-(defun magit-wip-save ()
-  (let* ((top-dir (magit-get-top-dir default-directory))
-         (name (buffer-file-name))
->>>>>>> overtone/master
          (spec `((?r . ,(file-relative-name name top-dir))
                  (?f . ,(buffer-file-name))
                  (?g . ,top-dir))))
