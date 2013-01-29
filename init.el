@@ -243,3 +243,53 @@
 
 (if (not live-disable-zone)
     (add-hook 'term-setup-hook 'zone))
+
+;org-mode
+(setq org-hierarchical-todo-statistics)
+(setq org-log-into-drawer "LOGBOOK")
+(setq org-todo-keywords
+      '((sequence "TODO(t!)" "WIP(w!)" "|" "DONE(d!)")
+        (sequence "DELEGATED(o!@)" "|" "DONE(d!)")
+        ( sequence "|" "CANCELLED(c!)")))
+(setq org-drawers '("PROPERTIES" "LOGBOOK"))
+(setq org-mobile-directory "~/Dropbox/org")
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(haskell-notify-p t)
+ '(haskell-process-type (quote cabal-dev))
+ '(haskell-stylish-on-save t)
+ '(haskell-tags-on-save t)
+ '(js2-basic-offset 2)
+ '(js2-highlight-external-variables t)
+ '(js2-highlight-level 3)
+ '(js2-missing-semi-one-line-override t)
+ '(js2-mode-indent-ignore-first-tab t)
+ '(org-agenda-files (quote ("~/org/personal.org" "~/org/comms.org" "~/org/tech.org" "~/org/misc-hp.org" "~/org/bravo.org" "~/org/team.org")))
+ '(sclang-auto-scroll-post-buffer t)
+ '(sclang-eval-line-forward nil)
+ '(sclang-help-path (quote ("/Applications/SuperCollider/Help")))
+ '(sclang-runtime-directory "~/.sclang/"))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(diff-added ((t (:foreground "Green"))))
+ '(diff-removed ((t (:foreground "Red"))))
+ '(ediff-even-diff-A ((((class color) (background dark)) (:background "dark green"))))
+ '(ediff-even-diff-B ((((class color) (background dark)) (:background "dark red"))))
+ '(ediff-odd-diff-A ((((class color) (background dark)) (:background "dark green"))))
+ '(ediff-odd-diff-B ((((class color) (background dark)) (:background "dark red"))))
+ '(eval-sexp-fu-flash ((((class color) (background dark)) (:background "grey15" :foreground "DeepPink3"))))
+ '(magit-branch ((((class color) (background dark)) (:foreground "gold"))))
+ '(magit-diff-add ((((class color) (background dark)) (:foreground "chartreuse3"))))
+ '(magit-diff-del ((((class color) (background dark)) (:foreground "violet red"))))
+ '(magit-diff-hunk-header ((((class color) (background dark)) (:foreground "orange"))))
+ '(magit-item-highlight ((((class color) (background dark)) (:background "gray15"))))
+ '(magit-section-title ((((class color) (background dark)) (:foreground "deep pink"))))
+ '(mumamo-background-chunk-major ((((class color) (background dark)) (:background "black"))))
+ '(mumamo-background-chunk-submode1 ((((class color) (background dark)) (:background "black")))))
