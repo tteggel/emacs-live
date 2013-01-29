@@ -112,8 +112,8 @@
         path = packs/dev/foundation-pack/vendor/submodules/packed
         url = git://github.com/tarsius/packed.git
 [submodule "packs/dev/power-pack/vendor/submodules/multiple-cursors"]
-	path = packs/dev/power-pack/vendor/submodules/multiple-cursors
-	url = git://github.com/magnars/multiple-cursors.el.git
+        path = packs/dev/power-pack/vendor/submodules/multiple-cursors
+        url = git://github.com/magnars/multiple-cursors.el.git
 [submodule "packs/dev/english-pack/vendor/submodules/artbollocks-mode"]
-	path = packs/dev/english-pack/vendor/submodules/artbollocks-mode
-	url = git://github.com/sachac/artbollocks-mode.git
+        path = packs/dev/english-pack/vendor/submodules/artbollocks-mode
+        url = git://github.com/sachac/artbollocks-mode.git
